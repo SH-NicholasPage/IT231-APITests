@@ -1,0 +1,7 @@
+APITests/.v*
+APITests/APITests/Client/bin/*
+APITests/APITests/Client/obj/*
+APITests/APITests/Server/bin/*
+APITests/APITests/Server/obj/*
+APITests/APITests/Shared/bin/*
+APITests/APITests/Shared/obj/*
