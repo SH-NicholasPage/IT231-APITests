@@ -100,7 +100,7 @@ namespace APITests.Server.Controllers
         }
 
         [HttpDelete]
-        public String Delete(String id)
+        public String Delete(String? id)
         {
             if (String.IsNullOrEmpty(id) == true || Int32.TryParse(id, out _) == false)
             {
