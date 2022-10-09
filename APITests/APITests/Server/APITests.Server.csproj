@@ -12,7 +12,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Client\APITests.Client.csproj" />
-    <ProjectReference Include="..\Shared\APITests.Shared.csproj" />
   </ItemGroup>
 
 

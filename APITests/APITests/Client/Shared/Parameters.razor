@@ -1,0 +1,81 @@
+﻿<table>
+	<thead>
+		@if (String.IsNullOrEmpty(Params1_1) == true)
+		{
+			<tr>
+				<th>
+					Parameters
+				</th>
+			</tr>
+			<tr>
+				<th>
+					None
+				</th>
+			</tr>
+		}
+		else
+		{
+			<tr>
+				<th colspan="2">
+					Parameters
+				</th>
+			</tr>
+			<tr>
+				<th>
+					Key
+				</th>
+				<th>
+					Value
+				</th>
+			</tr>
+		}
+	</thead>
+	@if (String.IsNullOrEmpty(Params1_1) == false)
+	{
+		<tr>
+			<td>@Params1_1</td>
+			<td>@Params1_2</td>
+		</tr>
+	}
+	@if (String.IsNullOrEmpty(Params2_1) == false)
+	{
+		<tr>
+			<td>@Params2_1</td>
+			<td>@Params2_2</td>
+		</tr>
+	}
+	@if (String.IsNullOrEmpty(Params3_1) == false)
+	{
+		<tr>
+			<td>@Params3_1</td>
+			<td>@Params3_2</td>
+		</tr>
+	}
+	@if (String.IsNullOrEmpty(Params4_1) == false)
+	{
+		<tr>
+			<td>@Params4_1</td>
+			<td>@Params4_2</td>
+		</tr>
+	}
+</table>
+
+@code
+{
+	[Parameter]
+	public String Params1_1 { get; set; } = String.Empty;
+	[Parameter]
+	public String Params1_2 { get; set; } = String.Empty;
+	[Parameter]
+	public String Params2_1 { get; set; } = String.Empty;
+	[Parameter]
+	public String Params2_2 { get; set; } = String.Empty;
+	[Parameter]
+	public String Params3_1 { get; set; } = String.Empty;
+	[Parameter]
+	public String Params3_2 { get; set; } = String.Empty;
+	[Parameter]
+	public String Params4_1 { get; set; } = String.Empty;
+	[Parameter]
+	public String Params4_2 { get; set; } = String.Empty;
+}

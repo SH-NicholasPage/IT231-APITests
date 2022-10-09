@@ -1,4 +1,3 @@
-using APITests.Shared;
 using Microsoft.AspNetCore.Mvc;
 
 namespace APITests.Server.Controllers

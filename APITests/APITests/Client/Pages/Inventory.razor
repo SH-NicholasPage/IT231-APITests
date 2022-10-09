@@ -1,0 +1,30 @@
+﻿@page "/Inventory"
+@inject NavigationManager NavManager
+
+<PageTitle>Hello, World - API Doc</PageTitle>
+
+<span>@(NavManager.BaseUri)API/Inventory</span>
+
+<h1>GET</h1>
+
+<Parameters />
+
+<br />OR
+
+<Parameters Params1_1="id" Params1_2="Positive integer, positive integers space-separated, or ALL to get all"/>
+
+<h1>POST</h1>
+
+<Parameters Params1_1="value" Params1_2="The new item's name."
+			Params2_1="quantity" Params2_2="The quantity of the new item." />
+
+<h1>PUT</h1>
+
+<Parameters Params1_1="id" Params1_2="Positive integer. The ID of the item you want to change."
+			Params2_1="value" Params2_2="(Optional) Will rename the item to whatever is in value."
+			Params3_1="quantity" Params3_2="(Optional) Will change the quantity of an item to whatever this is set to." />
+<p>Note: Value and quantity can't both be null.</p>
+
+<h1>DELETE</h1>
+
+<Parameters Params1_1="id" Params1_2="Positive integer. The ID of the item you want to delete." />
