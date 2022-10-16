@@ -54,11 +54,12 @@ namespace APITests.Server.Controllers
         {
             //TODO: Your code here
             //Make sure you return a message so the user knows whether or not their API call was successful or not.
+            //If datetime is null, the datetime should be now. Use the DateTime.Now property.
 
             //Modify this line if needed
             if(datetime != null && DateTime.TryParse(datetime, out _) == false)//String datetime is not a valid date and/or time
             {
-
+                
             }
 
             throw new NotImplementedException();
