@@ -35,7 +35,7 @@ namespace APITests.Server.Controllers
 
             if (BlogPosts.Count == 0)
             {
-                BlogPosts.Add(BlogPosts.Count + 1, new BlogPost("doglover777", new DateTime(2022, 08, 10, 22, 15, 0), "I love dogs!! :)"));
+                BlogPosts.Add(BlogPosts.Count + 1, new BlogPost("doglover777", DateTime.Parse("Oct 8, 2022 14:46:30"), "I love dogs!! :)"));
                 //TODO: Put a few more default posts in here
             }
         }
@@ -54,6 +54,13 @@ namespace APITests.Server.Controllers
         {
             //TODO: Your code here
             //Make sure you return a message so the user knows whether or not their API call was successful or not.
+
+            //Modify this line if needed
+            if(datetime != null && DateTime.TryParse(datetime, out _) == false)//String datetime is not a valid date and/or time
+            {
+
+            }
+
             throw new NotImplementedException();
         }
 
@@ -62,6 +69,13 @@ namespace APITests.Server.Controllers
         {
             //TODO: Your code here
             //Make sure you return a message so the user knows whether or not their API call was successful or not.
+
+            //Modify this line if needed
+            if (datetime != null && DateTime.TryParse(datetime, out _) == false)//String datetime is not a valid date and/or time
+            {
+
+            }
+
             throw new NotImplementedException();
         }
 
