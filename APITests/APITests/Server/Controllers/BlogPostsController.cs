@@ -35,6 +35,8 @@ namespace APITests.Server.Controllers
 
             if (BlogPosts.Count == 0)
             {
+                //All the string formats that can be parsed as a datetime:
+                //https://learn.microsoft.com/en-us/dotnet/api/system.datetime.parse?view=net-6.0
                 BlogPosts.Add(BlogPosts.Count + 1, new BlogPost("doglover777", DateTime.Parse("Oct 8, 2022 14:46:30"), "I love dogs!! :)"));
                 //TODO: Put a few more default posts in here
             }
